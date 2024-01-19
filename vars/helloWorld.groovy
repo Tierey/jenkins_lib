@@ -1,4 +1,4 @@
 
-def log( messge ) {
+def call( messge ) {
     echo "Log: ${message}"
 }

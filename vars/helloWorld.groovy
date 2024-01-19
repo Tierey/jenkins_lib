@@ -1,4 +1,4 @@
 
-def call( String messge = "Hello World!" ) {
-    echo "Log: ${message}"
+def call( String msg = "Hello World!" ) {
+    echo "Log: ${msg}"
 }

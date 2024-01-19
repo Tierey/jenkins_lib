@@ -1,0 +1,1 @@
+# for org.foo.Bar class

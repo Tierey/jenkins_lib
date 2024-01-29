@@ -5,7 +5,7 @@ def call (Map config=[:]){
 
     def dir = new File(pwd());
 
-    new File(dir.path + "/releasenotes.txt").witchWriter('utf-8'){
+    new File(dir.path + "/releasenotes.txt").witchWriter{
         writer -> dir.eachFileRecurse(FiletType.ANY) { file ->
             if(file.isDirectory()){
                 writer.writeFile(file.name)

@@ -7,7 +7,7 @@ def call (Map config=[:]){
     def dir = new File(pwd());
     def writer = new File(dir.path + "/releasenotes.txt").newWriter()
  
-    dir.eachFileRecurse(FiletType.ANY) { file ->
+    dir.eachFileRecurse(FileType.ANY) { file ->
         if(file.isDirectory()){
             writer.writeFile(file.name)
         }else{

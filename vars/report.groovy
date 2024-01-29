@@ -11,6 +11,7 @@ def call (Map config=[:]){
         if(file.isDirectory()){
             writer.writeLine(file.name)
         }else{
+            println(file.name)
             writer.writeLine("\t" + file.name + "\t" + file.length())
         }
    }

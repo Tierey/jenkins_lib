@@ -12,7 +12,7 @@ def call (Map config=[:]){
             writer.writeLine(file.name)
         }else{
             println(file.name)
-            writer.writeLine("\t" + file.name + "\t" + file.length())
+            writer.writeLine("aaaaaaaaaaaaaaaa")
         }
    }
 }

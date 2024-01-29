@@ -9,9 +9,9 @@ def call (Map config=[:]){
  
     dir.eachFileRecurse(FileType.ANY) { file ->
         if(file.isDirectory()){
-            writer.writeFile(file.name)
+            writer.writeLine(file.name)
         }else{
-            writer.writeFile("\t" + file.name + "\t" + file.length())
+            writer.writeLine("\t" + file.name + "\t" + file.length())
         }
    }
 }

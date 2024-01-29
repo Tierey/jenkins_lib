@@ -1,0 +1,7 @@
+library identifier :'jenkins_lib@master', retriever : modernSCM([ $class :'GitSCMSource', remote :'https://github.com/Tierey/jenkins_lib.git' ])
+node {
+    stage('Hello') {
+        sh "touch some.txt"
+        report()   
+    }
+}
